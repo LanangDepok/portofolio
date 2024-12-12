@@ -6,6 +6,8 @@ export default {
       animation: {
         borderSpinRGB: "borderRGB 4s linear infinite, spin 4s linear infinite",
         pagesRGB: "bacgroundRGB 4s linear infinite",
+        skeleton: "skeletonLoading 2s linear infinite",
+        borderSpinSKeleton: "spin 1s linear infinite",
       },
       keyframes: {
         borderRGB: {
@@ -46,6 +48,17 @@ export default {
           },
           "100%": {
             backgroundColor: "#FF1493",
+          },
+        },
+        skeletonLoading: {
+          "0%": {
+            backgroundColor: "#E5E7EB",
+          },
+          "50%": {
+            backgroundColor: "#4B5563",
+          },
+          "100%": {
+            backgroundColor: "#E5E7EB",
           },
         },
       },

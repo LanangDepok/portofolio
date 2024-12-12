@@ -26,6 +26,9 @@ const Experiences = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        {/* <div className="h-screen w-full animate-skeleton flex items-center justify-center">
+          <div className="size-20 lg:size-40 rounded-full animate-borderSpinSKeleton border-t-4 border-gray-700"></div>
+        </div> */}
         <CardImage
           title="Toolstore"
           role="Full Stack Web Developer"
