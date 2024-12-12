@@ -22,6 +22,7 @@ const Certificates = () => {
           className="rounded-t-lg"
           data-aos="zoom-in"
           data-aos-duration="1500"
+          loading="lazy"
         />
         <img
           src={LSP_tikglobal}
@@ -29,6 +30,7 @@ const Certificates = () => {
           className="rounded-t-lg"
           data-aos="zoom-in"
           data-aos-duration="1500"
+          loading="lazy"
         />
         <img
           src={CCIT}
@@ -36,6 +38,7 @@ const Certificates = () => {
           className="rounded-t-lg"
           data-aos="zoom-in"
           data-aos-duration="1500"
+          loading="lazy"
         />
         <img
           src={dicoding_jsdasar}
@@ -43,6 +46,7 @@ const Certificates = () => {
           className="rounded-t-lg"
           data-aos="zoom-in"
           data-aos-duration="1500"
+          loading="lazy"
         />
         <img
           src={dicoding_backenddasar}
@@ -50,6 +54,7 @@ const Certificates = () => {
           className="rounded-t-lg"
           data-aos="zoom-in"
           data-aos-duration="1500"
+          loading="lazy"
         />
         <img
           src={dicoding_reactdasar}
@@ -57,6 +62,7 @@ const Certificates = () => {
           className="rounded-t-lg"
           data-aos="zoom-in"
           data-aos-duration="1500"
+          loading="lazy"
         />
       </div>
     </div>

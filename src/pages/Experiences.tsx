@@ -50,6 +50,7 @@ const Experiences = () => {
             src={toolstore}
             alt="Toolstore experience"
             className="rounded-t-lg"
+            loading="lazy"
           />
         </CardImage>
         <CardImage
@@ -65,7 +66,12 @@ const Experiences = () => {
             </>
           }
         >
-          <img src={MSIB} alt="Toolstore experience" className="rounded-t-lg" />
+          <img
+            src={MSIB}
+            alt="Toolstore experience"
+            className="rounded-t-lg"
+            loading="lazy"
+          />
         </CardImage>
         <CardImage
           title="scriptSI"
@@ -88,6 +94,7 @@ const Experiences = () => {
             src={scriptSI}
             alt="Toolstore experience"
             className="rounded-t-lg"
+            loading="lazy"
           />
         </CardImage>
       </div>
