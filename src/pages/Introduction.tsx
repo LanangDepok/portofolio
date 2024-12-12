@@ -13,7 +13,7 @@ const Introduction = () => {
           <img
             src={PhotoProfileRed}
             alt="Photo profile"
-            className="rounded-full size-48 lg:size-80 hover:cursor-pointer"
+            className="rounded-full size-48 lg:size-80"
           />
           <div className="size-[202px] lg:size-[330px] border-t-8 absolute rounded-full -z-10 top-[175px] lg:top-[175px] animate-borderSpinRGB"></div>
         </div>
