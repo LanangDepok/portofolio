@@ -1,14 +1,6 @@
-import { useState } from "react";
 import PhotoProfileRed from "../assets/images/profile/profileBgRed.jpg";
-import PhotoProfileBlue from "../assets/images/profile/profileBgBlue.jpg";
 
 const Introduction = () => {
-  const [profile, setProfile] = useState("red");
-
-  const toggleProfile = () => {
-    setProfile((prev) => (prev === "red" ? "blue" : "red"));
-  };
-
   return (
     <div>
       <div className="h-7 flex items-center justify-center mb-10">
@@ -17,9 +9,9 @@ const Introduction = () => {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row-reverse gap-7 lg:gap-28">
-        <div className="flex justify-center shrink-0" onClick={toggleProfile}>
+        <div className="flex justify-center shrink-0">
           <img
-            src={profile === "red" ? PhotoProfileRed : PhotoProfileBlue}
+            src={PhotoProfileRed}
             alt="Photo profile"
             className="rounded-full size-48 lg:size-80 hover:cursor-pointer"
           />
