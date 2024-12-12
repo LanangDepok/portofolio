@@ -16,6 +16,7 @@ import CardImage from "../components/CardImage";
 import toolstore from "../assets/images/experience/toolstore.jpg";
 import MSIB from "../assets/images/experience/MSIB.png";
 import scriptSI from "../assets/images/experience/scriptSI.png";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 
 const Experiences = () => {
   return (
@@ -26,9 +27,6 @@ const Experiences = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-        {/* <div className="h-screen w-full animate-skeleton flex items-center justify-center">
-          <div className="size-20 lg:size-40 rounded-full animate-borderSpinSKeleton border-t-4 border-gray-700"></div>
-        </div> */}
         <CardImage
           title="Toolstore"
           role="Full Stack Web Developer"
@@ -46,12 +44,7 @@ const Experiences = () => {
             </>
           }
         >
-          <img
-            src={toolstore}
-            alt="Toolstore experience"
-            className="rounded-t-lg"
-            loading="lazy"
-          />
+          <ImageWithSkeleton src={toolstore} alt="Toolstore experience" />
         </CardImage>
         <CardImage
           title="Intern MSIB Batch 5"
@@ -66,12 +59,7 @@ const Experiences = () => {
             </>
           }
         >
-          <img
-            src={MSIB}
-            alt="Toolstore experience"
-            className="rounded-t-lg"
-            loading="lazy"
-          />
+          <ImageWithSkeleton src={MSIB} alt="MSIB experience" />
         </CardImage>
         <CardImage
           title="scriptSI"
@@ -90,12 +78,7 @@ const Experiences = () => {
             </>
           }
         >
-          <img
-            src={scriptSI}
-            alt="Toolstore experience"
-            className="rounded-t-lg"
-            loading="lazy"
-          />
+          <ImageWithSkeleton src={scriptSI} alt="scriptSI experience" />
         </CardImage>
       </div>
     </div>

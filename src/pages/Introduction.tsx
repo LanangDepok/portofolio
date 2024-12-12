@@ -1,6 +1,21 @@
+import { useState } from "react";
 import PhotoProfileRed from "../assets/images/profile/profileBgRed.jpg";
+import PhotoProfileBlue from "../assets/images/profile/profileBgBlue.jpg";
 
 const Introduction = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [profile, setProfile] = useState(PhotoProfileRed);
+
+  const triggerLoading = () => {
+    setIsLoading(false);
+  };
+
+  const changeProfile = () => {
+    setProfile((prev) =>
+      prev === PhotoProfileRed ? PhotoProfileBlue : PhotoProfileRed
+    );
+  };
+
   return (
     <div>
       <div className="h-7 flex items-center justify-center mb-10">
@@ -10,11 +25,19 @@ const Introduction = () => {
       </div>
       <div className="flex flex-col lg:flex-row-reverse gap-7 lg:gap-28">
         <div className="flex justify-center shrink-0">
+          {isLoading && (
+            <div className="rounded-full size-48 lg:size-80 animate-skeleton flex justify-center items-center">
+              <div className="size-20 rounded-full animate-borderSpinSKeleton border-t-4 border-gray-700"></div>
+            </div>
+          )}
           <img
-            src={PhotoProfileRed}
+            src={profile}
             alt="Photo profile"
-            className="rounded-full size-48 lg:size-80"
-            loading="lazy"
+            className={`rounded-full size-48 lg:size-80 hover:cursor-pointer ${
+              isLoading && "hidden"
+            }`}
+            onLoad={triggerLoading}
+            onClick={changeProfile}
           />
           <div className="size-[202px] lg:size-[330px] border-t-8 absolute rounded-full -z-10 top-[175px] lg:top-[175px] animate-borderSpinRGB"></div>
         </div>

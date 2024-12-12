@@ -6,6 +6,7 @@ import LSP_informatika from "../assets/images/certificate/LSP_informatika.jpg";
 import LSP_tikglobal from "../assets/images/certificate/LSP_tikglobal.jpg";
 // import dicoding_aws from "./assets/images/certificate/dicoding_aws.png";
 // import NIIT from "./assets/images/certificate/NIIT.jpg";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 
 const Certificates = () => {
   return (
@@ -16,54 +17,33 @@ const Certificates = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-        <img
-          src={LSP_informatika}
-          alt="LSP Informatika"
-          className="rounded-t-lg"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          loading="lazy"
-        />
-        <img
-          src={LSP_tikglobal}
-          alt="LSP TIK Global"
-          className="rounded-t-lg"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          loading="lazy"
-        />
-        <img
-          src={CCIT}
-          alt="CCIT"
-          className="rounded-t-lg"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          loading="lazy"
-        />
-        <img
-          src={dicoding_jsdasar}
-          alt="Belajar Dasar Pemrograman Javascript"
-          className="rounded-t-lg"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          loading="lazy"
-        />
-        <img
-          src={dicoding_backenddasar}
-          alt="Belajar Membuat Aplikasi Back-End untuk Pemula"
-          className="rounded-t-lg"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          loading="lazy"
-        />
-        <img
-          src={dicoding_reactdasar}
-          alt="Belajar Membuat Aplikasi Web dengan React"
-          className="rounded-t-lg"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-          loading="lazy"
-        />
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <ImageWithSkeleton src={LSP_informatika} alt="LSP Informatika" />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <ImageWithSkeleton src={LSP_tikglobal} alt="LSP TIK Global" />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <ImageWithSkeleton src={CCIT} alt="CCIT" />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <ImageWithSkeleton
+            src={dicoding_jsdasar}
+            alt="Belajar Dasar Pemrograman Javascript"
+          />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <ImageWithSkeleton
+            src={dicoding_backenddasar}
+            alt="Belajar Membuat Aplikasi Back-End untuk Pemula"
+          />
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <ImageWithSkeleton
+            src={dicoding_reactdasar}
+            alt="Belajar Membuat Aplikasi Web dengan React"
+          />
+        </div>
       </div>
     </div>
   );
