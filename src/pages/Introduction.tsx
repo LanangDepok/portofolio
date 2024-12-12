@@ -1,19 +1,11 @@
 import { useState } from "react";
 import PhotoProfileRed from "../assets/images/profile/profileBgRed.jpg";
-import PhotoProfileBlue from "../assets/images/profile/profileBgBlue.jpg";
 
 const Introduction = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [profile, setProfile] = useState(PhotoProfileRed);
 
   const triggerLoading = () => {
     setIsLoading(false);
-  };
-
-  const changeProfile = () => {
-    setProfile((prev) =>
-      prev === PhotoProfileRed ? PhotoProfileBlue : PhotoProfileRed
-    );
   };
 
   return (
@@ -31,13 +23,12 @@ const Introduction = () => {
             </div>
           )}
           <img
-            src={profile}
+            src={PhotoProfileRed}
             alt="Photo profile"
-            className={`rounded-full size-48 lg:size-80 hover:cursor-pointer ${
+            className={`rounded-full size-48 lg:size-80 ${
               isLoading && "hidden"
             }`}
             onLoad={triggerLoading}
-            onClick={changeProfile}
           />
           <div className="size-[202px] lg:size-[330px] border-t-8 absolute rounded-full -z-10 top-[175px] lg:top-[175px] animate-borderSpinRGB"></div>
         </div>
