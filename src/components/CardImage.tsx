@@ -16,11 +16,7 @@ const Experience = ({
   technology: ReactNode;
 }) => {
   return (
-    <div
-      className="border-2 border-purple-600 rounded-lg"
-      data-aos="flip-left"
-      data-aos-duration="1500"
-    >
+    <div className="border-2 border-purple-600 rounded-lg">
       {children}
       <div className="mx-5">
         <p className="text-white text-center text-xl font-semibold mt-5">

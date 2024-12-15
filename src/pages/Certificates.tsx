@@ -17,28 +17,28 @@ const Certificates = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-        <div data-aos="zoom-in" data-aos-duration="1500">
+        <div>
           <ImageWithSkeleton src={LSP_informatika} alt="LSP Informatika" />
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1500">
+        <div>
           <ImageWithSkeleton src={LSP_tikglobal} alt="LSP TIK Global" />
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1500">
+        <div>
           <ImageWithSkeleton src={CCIT} alt="CCIT" />
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1500">
+        <div>
           <ImageWithSkeleton
             src={dicoding_jsdasar}
             alt="Belajar Dasar Pemrograman Javascript"
           />
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1500">
+        <div>
           <ImageWithSkeleton
             src={dicoding_backenddasar}
             alt="Belajar Membuat Aplikasi Back-End untuk Pemula"
           />
         </div>
-        <div data-aos="zoom-in" data-aos-duration="1500">
+        <div>
           <ImageWithSkeleton
             src={dicoding_reactdasar}
             alt="Belajar Membuat Aplikasi Web dengan React"
