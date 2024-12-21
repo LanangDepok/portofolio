@@ -1,17 +1,19 @@
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import LocaleContext from "../context/LocaleContext";
 
 const Contacts = () => {
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
+  const [locale] = useContext(LocaleContext);
 
   return (
     <div>
       <div className="h-7 flex items-center justify-center mb-10">
         <p className="text-white underline underline-offset-8 text-2xl">
-          Contacts
+          {locale === "en" ? "Contacts" : "Kontak"}
         </p>
       </div>
       <div className="flex flex-col lg:flex-row justify-between gap-20">
@@ -21,12 +23,9 @@ const Contacts = () => {
           data-aos-duration="1500"
         >
           <p className="text-white text-justify">
-            If you’re interested in working together or have any questions about
-            what I do, feel free to get in touch. You can use the form below to
-            send me a message with your ideas, questions, or anything you’d like
-            to share. I’ll do my best to review your message quickly and get
-            back to you as soon as I can. Thank you for reaching out, and I look
-            forward to hearing from you!
+            {locale === "en"
+              ? " If you’re interested in working together or have any questions about what I do, feel free to get in touch. You can use the form below to send me a message with your ideas, questions, or anything you’d like to share. I’ll do my best to review your message quickly and get back to you as soon as I can. Thank you for reaching out, and I look forward to hearing from you!"
+              : "Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan tentang apa yang saya lakukan, jangan ragu untuk menghubungi saya. Anda dapat menggunakan formulir di bawah ini untuk mengirimkan pesan berisi ide, pertanyaan, atau apa pun yang ingin Anda bagikan. Saya akan berusaha sebaik mungkin untuk meninjau pesan Anda dengan cepat dan membalasnya sesegera mungkin. Terima kasih telah menghubungi, dan saya menantikan untuk mendengar kabar dari Anda!"}
           </p>
           <div className="flex gap-10 mt-5">
             <a
@@ -59,7 +58,7 @@ const Contacts = () => {
         >
           <form className="border-2 rounded-lg border-purple-600 py-5 flex flex-col items-center gap-7 shadow-xl shadow-purple-800">
             <p className="text-white text-center text-xl font-semibold">
-              Contact Me
+              {locale === "en" ? "Contact Me" : "Hubungi Saya"}
             </p>
             <div className="flex flex-col justify-start w-3/4">
               <label htmlFor="email" className="text-white">
@@ -107,7 +106,7 @@ const Contacts = () => {
               rel="noopener noreferrer"
               className="text-white text-center w-1/3 bg-gradient-to-r hover:bg-gradient-to-br from-purple-400 to-purple-800 rounded-xl py-1"
             >
-              Send
+              {locale === "en" ? "Send" : "Kirim"}
             </a>
           </form>
         </div>

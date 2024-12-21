@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
+import { MdGTranslate } from "react-icons/md";
+import LocaleContext from "../context/LocaleContext";
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const location = useLocation();
+  const [locale, handleLocale] = useContext(LocaleContext);
 
   const toggleSidebar = () => {
     setIsSidebarOpen((prev) => !prev);
@@ -17,12 +20,24 @@ const Header = () => {
           className="text-2xl text-white lg:hidden"
           onClick={toggleSidebar}
         />
-        <h1 className="text-white font-bold text-2xl">My Portofolio</h1>
+        <h1 className="text-white font-bold text-2xl">
+          {locale === "en" ? "My Portofolio" : "Portofolio Saya"}
+        </h1>
+      </div>
+      <div className="absolute right-10 lg:right-auto lg:left-1/2 lg:-translate-x-1/2 flex gap-10 top-5">
+        <div
+          className="flex gap-1 items-center hover:bg-purple-400 hover:cursor-pointer"
+          onClick={handleLocale}
+        >
+          <MdGTranslate className="text-white text-xl" />
+          <p className="text-white text-xl">{locale}</p>
+        </div>
+        {/* <div>theme</div> */}
       </div>
       <div
         className={`${
           !isSidebarOpen ? "-translate-x-48" : "translate-x-48"
-        } absolute -left-48 w-48 lg:w-3/4 lg:flex lg:justify-end lg:translate-x-0 bg-purple-600 transition duration-500 lg:static`}
+        } absolute -left-48 w-48 lg:w-auto lg:flex lg:justify-end lg:translate-x-0 bg-purple-600 transition duration-500 lg:static`}
       >
         <ul className="flex flex-col lg:flex-row gap-6 py-5 text-center h-screen lg:h-full text-white">
           <Link
@@ -32,7 +47,7 @@ const Header = () => {
             }`}
             onClick={toggleSidebar}
           >
-            Introduction
+            {locale === "en" ? "Introduction" : "Perkenalan"}
           </Link>
           <Link
             to="/skills"
@@ -41,7 +56,7 @@ const Header = () => {
             }`}
             onClick={toggleSidebar}
           >
-            Skills
+            {locale === "en" ? "Skills" : "Keahlian"}
           </Link>
           <Link
             to="/experiences"
@@ -51,7 +66,7 @@ const Header = () => {
             }`}
             onClick={toggleSidebar}
           >
-            Experiences
+            {locale === "en" ? "Experiences" : "Pengalaman"}
           </Link>
           <Link
             to="/certificates"
@@ -61,7 +76,7 @@ const Header = () => {
             }`}
             onClick={toggleSidebar}
           >
-            Certificates
+            {locale === "en" ? "Certificates" : "Sertifikat"}
           </Link>
           <Link
             to="/contacts"
@@ -71,7 +86,7 @@ const Header = () => {
             }`}
             onClick={toggleSidebar}
           >
-            Contacts
+            {locale === "en" ? "Contacts" : "Kontak"}
           </Link>
         </ul>
       </div>

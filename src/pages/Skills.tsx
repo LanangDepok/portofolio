@@ -12,13 +12,17 @@ import { SiNextdotjs } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTypescript } from "react-icons/si";
+import LocaleContext from "../context/LocaleContext";
+import { useContext } from "react";
 
 const Skills = () => {
+  const [locale] = useContext(LocaleContext);
+
   return (
     <div>
       <div className="h-7 flex items-center justify-center mb-10">
         <p className="text-white underline underline-offset-8 text-2xl">
-          Skills
+          {locale === "en" ? "Skills" : "Keahlian"}
         </p>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-20 lg:gap-x-16">
@@ -76,7 +80,7 @@ const Skills = () => {
           data-aos-duration="1500"
         >
           <FaReact className="text-[#61DAFB] size-20 mx-auto hover:scale-150 hover:-translate-y-5" />
-          <p className="text-white">React JS</p>
+          <p className="text-white">React</p>
         </div>
         <div
           className="flex flex-col items-center transition duration-300"

@@ -7,13 +7,17 @@ import LSP_tikglobal from "../assets/images/certificate/LSP_tikglobal.jpg";
 // import dicoding_aws from "./assets/images/certificate/dicoding_aws.png";
 // import NIIT from "./assets/images/certificate/NIIT.jpg";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
+import LocaleContext from "../context/LocaleContext";
+import { useContext } from "react";
 
 const Certificates = () => {
+  const [locale] = useContext(LocaleContext);
+
   return (
     <div>
       <div className="h-7 flex items-center justify-center mb-10">
         <p className="text-white underline underline-offset-8 text-2xl">
-          Certificates
+          {locale === "en" ? "Certificates" : "Sertifikat"}
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
