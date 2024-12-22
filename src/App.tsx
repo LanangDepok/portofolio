@@ -16,6 +16,14 @@ function App() {
     AOS.init();
   }, []);
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen((prev) => !prev);
+  };
+
+  const closeSidebar = () => setIsSidebarOpen(false);
+
   const [locale, setLocale] = useState<string>(
     localStorage.getItem("locale") || "en"
   );
@@ -33,8 +41,8 @@ function App() {
   return (
     <LocaleContext.Provider value={localeContextValue}>
       <div className="relative min-h-screen py-28">
-        <Header />
-        <main className="px-12 lg:px-24">
+        <Header isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+        <main className="px-12 lg:px-24" onClick={closeSidebar}>
           <Routes>
             <Route path="/" element={<Introduction />} />
             <Route path="/skills" element={<Skills />} />

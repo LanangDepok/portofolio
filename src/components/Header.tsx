@@ -1,17 +1,18 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 import { MdGTranslate } from "react-icons/md";
 import LocaleContext from "../context/LocaleContext";
 
-const Header = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+const Header = ({
+  isSidebarOpen,
+  toggleSidebar,
+}: {
+  isSidebarOpen: boolean;
+  toggleSidebar: () => void;
+}) => {
   const location = useLocation();
   const [locale, handleLocale] = useContext(LocaleContext);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen((prev) => !prev);
-  };
 
   return (
     <div className="fixed top-0 z-10 bg-purple-600 w-full lg:flex lg:justify-between h-16 px-5">
