@@ -31,7 +31,6 @@ const Introduction = () => {
               isLoading && "hidden"
             }`}
             onLoad={triggerLoading}
-            loading="lazy"
           />
           <div className="size-[202px] lg:size-[330px] border-t-8 absolute rounded-full -z-10 top-[175px] lg:top-[175px] animate-borderSpinRGB"></div>
         </div>

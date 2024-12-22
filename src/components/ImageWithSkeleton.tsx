@@ -20,7 +20,6 @@ const ImageWithSkeleton = ({ src, alt }: { src: string; alt: string }) => {
         alt={alt}
         className={`rounded-t-lg ${isLoading && "hidden"}`}
         onLoad={triggerLoading}
-        loading="lazy"
       />
     </>
   );
