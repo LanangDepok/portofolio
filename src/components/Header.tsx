@@ -29,7 +29,7 @@ const Header = ({
       </div>
       <div className="absolute right-10 lg:right-auto lg:left-1/2 lg:-translate-x-1/2 flex gap-10 top-5">
         <div
-          className="flex gap-1 items-center hover:bg-purple-400 hover:cursor-pointer"
+          className="flex gap-1 items-center hover:cursor-pointer"
           onClick={handleLocale}
         >
           <MdGTranslate className="text-white text-xl" />

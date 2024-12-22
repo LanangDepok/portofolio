@@ -32,6 +32,7 @@ const Contacts = () => {
               href="https://wa.me/62895365145790"
               target="_blank"
               rel="noopener noreferrer"
+              className="transition duration-300 hover:scale-150"
             >
               <IoLogoWhatsapp className="text-[#25D366] size-10" />
             </a>
@@ -39,6 +40,7 @@ const Contacts = () => {
               href="https://www.instagram.com/bagass.7"
               target="_blank"
               rel="noopener noreferrer"
+              className="transition duration-300 hover:scale-150"
             >
               <BsInstagram className="text-[#E1306C] size-10" />
             </a>
@@ -46,6 +48,7 @@ const Contacts = () => {
               href="https://www.linkedin.com/in/bagas-rizkiyanto"
               target="_blank"
               rel="noopener noreferrer"
+              className="transition duration-300 hover:scale-150"
             >
               <FaLinkedin className="text-[#0077B5] size-10" />
             </a>
