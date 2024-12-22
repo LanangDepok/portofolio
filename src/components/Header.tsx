@@ -7,9 +7,11 @@ import LocaleContext from "../context/LocaleContext";
 const Header = ({
   isSidebarOpen,
   toggleSidebar,
+  closeSidebar,
 }: {
   isSidebarOpen: boolean;
   toggleSidebar: () => void;
+  closeSidebar: () => void;
 }) => {
   const location = useLocation();
   const [locale, handleLocale] = useContext(LocaleContext);
@@ -46,7 +48,7 @@ const Header = ({
             className={`hover:bg-purple-400 hover:cursor-pointer ${
               location.pathname === "/" && "underline underline-offset-8"
             }`}
-            onClick={toggleSidebar}
+            onClick={closeSidebar}
           >
             {locale === "en" ? "Introduction" : "Perkenalan"}
           </Link>
@@ -55,7 +57,7 @@ const Header = ({
             className={`hover:bg-purple-400 hover:cursor-pointer ${
               location.pathname === "/skills" && "underline underline-offset-8"
             }`}
-            onClick={toggleSidebar}
+            onClick={closeSidebar}
           >
             {locale === "en" ? "Skills" : "Keahlian"}
           </Link>
@@ -65,7 +67,7 @@ const Header = ({
               location.pathname === "/experiences" &&
               "underline underline-offset-8"
             }`}
-            onClick={toggleSidebar}
+            onClick={closeSidebar}
           >
             {locale === "en" ? "Experiences" : "Pengalaman"}
           </Link>
@@ -75,7 +77,7 @@ const Header = ({
               location.pathname === "/certificates" &&
               "underline underline-offset-8"
             }`}
-            onClick={toggleSidebar}
+            onClick={closeSidebar}
           >
             {locale === "en" ? "Certificates" : "Sertifikat"}
           </Link>
@@ -85,7 +87,7 @@ const Header = ({
               location.pathname === "/contacts" &&
               "underline underline-offset-8"
             }`}
-            onClick={toggleSidebar}
+            onClick={closeSidebar}
           >
             {locale === "en" ? "Contacts" : "Kontak"}
           </Link>

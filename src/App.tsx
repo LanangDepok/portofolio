@@ -41,7 +41,11 @@ function App() {
   return (
     <LocaleContext.Provider value={localeContextValue}>
       <div className="relative min-h-screen py-28">
-        <Header isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+        <Header
+          isSidebarOpen={isSidebarOpen}
+          toggleSidebar={toggleSidebar}
+          closeSidebar={closeSidebar}
+        />
         <main className="px-12 lg:px-24" onClick={closeSidebar}>
           <Routes>
             <Route path="/" element={<Introduction />} />
