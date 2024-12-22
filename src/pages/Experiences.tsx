@@ -37,17 +37,36 @@ const Experiences = () => {
               ? "Developed the Toolstore application for the Civil Engineering and Mechanical Engineering departments at Politeknik Negeri Jakarta. This application streamlines the management of equipment loans, transitioning from a previously manual process to a more efficient digital system."
               : "Membuat aplikasi Toolstore untuk jurusan Teknik Sipil dan Teknik Mesin di Politeknik Negeri Jakarta. Aplikasi ini mempermudah peminjaman alat dengan mengubah proses yang sebelumnya manual menjadi sistem digital yang lebih efisien."
           }
-          technology={
-            <>
-              <FaHtml5 className="text-[#F16529] size-8" />
-              <FaCss3 className="text-[#2965F1] size-8" />
-              <FaBootstrap className="text-[#6610f2] size-8" />
-              <IoLogoJavascript className="text-[#F7DF1E] size-8" />
-              <RiPhpLine className="text-[#8993BE] size-8" />
-              <FaLaravel className="text-[#FF2D20] size-8" />
-              <GrMysql className="text-[#00758F] size-8" />
-            </>
-          }
+          technology={[
+            {
+              icon: <FaHtml5 className="text-[#F16529] size-8" />,
+              name: "HTML",
+            },
+            {
+              icon: <FaCss3 className="text-[#2965F1] size-8" />,
+              name: "CSS",
+            },
+            {
+              icon: <FaBootstrap className="text-[#6610f2] size-8" />,
+              name: "Bootstrap",
+            },
+            {
+              icon: <IoLogoJavascript className="text-[#F7DF1E] size-8" />,
+              name: "JavaScript",
+            },
+            {
+              icon: <RiPhpLine className="text-[#8993BE] size-8" />,
+              name: "PHP",
+            },
+            {
+              icon: <FaLaravel className="text-[#FF2D20] size-8" />,
+              name: "Laravel",
+            },
+            {
+              icon: <GrMysql className="text-[#00758F] size-8" />,
+              name: "MySQL",
+            },
+          ]}
         >
           <ImageWithSkeleton src={toolstore} alt="Toolstore experience" />
         </CardImage>
@@ -64,13 +83,20 @@ const Experiences = () => {
               ? "Developed the Pilih Jurusan Psychology Test application at PT Pilihanmu Indonesia Jaya. I was responsible for the Business/Service Workflow, which included managing the application's core logic and processing data received from the Database and API teams. The application was built using PHP with the Laravel Framework. As an achievement, I successfully added a payment feature using Midtrans and a banner feature to enhance the application's functionality."
               : "Mengembangkan aplikasi Tes Psikologi Pilih Jurusan di PT Pilihanmu Indonesia Jaya. Saya bertanggung jawab pada bagian Business/Service Workflow, yang meliputi pengelolaan logika utama aplikasi serta pengolahan data yang diterima dari tim Database dan API. Aplikasi ini dikembangkan menggunakan PHP dengan Framework Laravel. Sebagai pencapaian, saya berhasil menambahkan fitur pembelian menggunakan Midtrans dan fitur banner untuk meningkatkan fungsi aplikasi."
           }
-          technology={
-            <>
-              <RiPhpLine className="text-[#8993BE] size-8" />
-              <FaLaravel className="text-[#FF2D20] size-8" />
-              <BiLogoPostgresql className="text-[#336791] size-8" />
-            </>
-          }
+          technology={[
+            {
+              icon: <RiPhpLine className="text-[#8993BE] size-8" />,
+              name: "PHP",
+            },
+            {
+              icon: <FaLaravel className="text-[#FF2D20] size-8" />,
+              name: "Laravel",
+            },
+            {
+              icon: <BiLogoPostgresql className="text-[#336791] size-8" />,
+              name: "PostgreSQL",
+            },
+          ]}
         >
           <ImageWithSkeleton src={MSIB} alt="MSIB experience" />
         </CardImage>
@@ -87,17 +113,36 @@ const Experiences = () => {
               ? "Developed a Thesis Management application for the Informatics and Computer Engineering Department at Politeknik Negeri Jakarta. This application is designed to streamline the end-to-end thesis management process, from initiation to completion. Additionally, the application has been successfully hosted on the department's server and is ready for use."
               : "Membuat aplikasi Pengelolaan Skripsi untuk Jurusan Teknik Informatika dan Komputer di Politeknik Negeri Jakarta. Aplikasi ini dirancang untuk mempermudah proses pengelolaan skripsi secara menyeluruh, mulai dari awal hingga akhir. Selain itu, aplikasi ini telah berhasil di hosting pada server jurusan dan siap untuk digunakan."
           }
-          technology={
-            <>
-              <FaHtml5 className="text-[#F16529] size-8" />
-              <FaCss3 className="text-[#2965F1] size-8" />
-              <RiTailwindCssFill className="text-[#38B2AC] size-8" />
-              <IoLogoJavascript className="text-[#F7DF1E] size-8" />
-              <RiPhpLine className="text-[#8993BE] size-8" />
-              <FaLaravel className="text-[#FF2D20] size-8" />
-              <GrMysql className="text-[#00758F] size-8" />
-            </>
-          }
+          technology={[
+            {
+              icon: <FaHtml5 className="text-[#F16529] size-8" />,
+              name: "HTML",
+            },
+            {
+              icon: <FaCss3 className="text-[#2965F1] size-8" />,
+              name: "CSS",
+            },
+            {
+              icon: <RiTailwindCssFill className="text-[#38B2AC] size-8" />,
+              name: "Tailwind CSS",
+            },
+            {
+              icon: <IoLogoJavascript className="text-[#F7DF1E] size-8" />,
+              name: "JavaScript",
+            },
+            {
+              icon: <RiPhpLine className="text-[#8993BE] size-8" />,
+              name: "PHP",
+            },
+            {
+              icon: <FaLaravel className="text-[#FF2D20] size-8" />,
+              name: "Laravel",
+            },
+            {
+              icon: <GrMysql className="text-[#00758F] size-8" />,
+              name: "MySQL",
+            },
+          ]}
         >
           <ImageWithSkeleton src={scriptSI} alt="scriptSI experience" />
         </CardImage>
