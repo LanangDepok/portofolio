@@ -36,7 +36,7 @@ const Experience = ({
             <>
               <div className="relative group" key={index}>
                 {item.icon}
-                <div className="absolute z-10 w-28 text-white text-center bg-purple-600 top-10 left-1/2 -translate-x-1/2 rounded-xl opacity-0 group-hover:opacity-100">
+                <div className="absolute z-10 w-28 text-white text-center bg-purple-600 top-10 left-1/2 -translate-x-1/2 rounded-xl opacity-0 group-hover:opacity-100 pointer-events-none">
                   {item.name}
                 </div>
               </div>

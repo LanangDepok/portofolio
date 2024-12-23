@@ -17,7 +17,7 @@ const Header = ({
   const [locale, handleLocale] = useContext(LocaleContext);
 
   return (
-    <div className="fixed top-0 z-10 bg-purple-600 w-full lg:flex lg:justify-between h-16 px-5">
+    <div className="fixed top-0 z-10 bg-purple-600 w-full lg:flex lg:justify-between h-16 px-5 pointer-events-auto">
       <div className="flex items-center gap-5 h-full">
         <GiHamburgerMenu
           className="text-2xl text-white lg:hidden hover:cursor-pointer"
