@@ -13,10 +13,14 @@ import MSIB from "../assets/images/experience/MSIB.png";
 import scriptSI from "../assets/images/experience/scriptSI.png";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
 import LocaleContext from "../context/LocaleContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 const Experiences = () => {
   const [locale] = useContext(LocaleContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

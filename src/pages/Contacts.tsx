@@ -1,13 +1,17 @@
 import { IoLogoWhatsapp } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import LocaleContext from "../context/LocaleContext";
 
 const Contacts = () => {
   const [subject, setSubject] = useState("");
   const [body, setBody] = useState("");
   const [locale] = useContext(LocaleContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

@@ -13,10 +13,14 @@ import { FaBootstrap } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTypescript } from "react-icons/si";
 import LocaleContext from "../context/LocaleContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 const Skills = () => {
   const [locale] = useContext(LocaleContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

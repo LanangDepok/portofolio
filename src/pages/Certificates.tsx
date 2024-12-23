@@ -8,10 +8,14 @@ import LSP_tikglobal from "../assets/images/certificate/LSP_tikglobal.jpg";
 // import NIIT from "./assets/images/certificate/NIIT.jpg";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
 import LocaleContext from "../context/LocaleContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 const Certificates = () => {
   const [locale] = useContext(LocaleContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div>

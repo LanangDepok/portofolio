@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import PhotoProfileRed from "../assets/images/profile/profileBgRed.jpg";
 import LocaleContext from "../context/LocaleContext";
 
@@ -9,6 +9,10 @@ const Introduction = () => {
   const triggerLoading = () => {
     setIsLoading(false);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
