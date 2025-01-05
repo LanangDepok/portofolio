@@ -7,7 +7,7 @@ import LSP_tikglobal from "../assets/images/certificate/LSP_tikglobal.jpg";
 // import dicoding_aws from "./assets/images/certificate/dicoding_aws.png";
 // import NIIT from "./assets/images/certificate/NIIT.jpg";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
-import LocaleContext from "../context/LocaleContext";
+import { LocaleContext } from "../context/LocaleContext";
 import { useContext, useEffect } from "react";
 
 const Certificates = () => {

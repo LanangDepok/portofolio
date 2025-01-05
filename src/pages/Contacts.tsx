@@ -2,7 +2,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { useContext, useEffect, useState } from "react";
-import LocaleContext from "../context/LocaleContext";
+import { LocaleContext } from "../context/LocaleContext";
 
 const Contacts = () => {
   const [subject, setSubject] = useState("");

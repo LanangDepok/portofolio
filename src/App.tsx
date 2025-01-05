@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Introduction from "./pages/Introduction";
@@ -9,7 +9,7 @@ import Certificates from "./pages/Certificates";
 import Contacts from "./pages/Contacts";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import LocaleContext from "./context/LocaleContext";
+import { LocaleProvider } from "./context/LocaleContext";
 
 function App() {
   useEffect(() => {
@@ -24,22 +24,8 @@ function App() {
 
   const closeSidebar = () => setIsSidebarOpen(false);
 
-  const [locale, setLocale] = useState<string>(
-    localStorage.getItem("locale") || "en"
-  );
-
-  const handleLocale = useCallback(() => {
-    const newLocale = locale === "en" ? "id" : "en";
-    localStorage.setItem("locale", newLocale);
-    setLocale(newLocale);
-  }, [locale]);
-
-  const localeContextValue: [string, () => void] = useMemo(() => {
-    return [locale, handleLocale];
-  }, [locale, handleLocale]);
-
   return (
-    <LocaleContext.Provider value={localeContextValue}>
+    <LocaleProvider>
       <div className="relative min-h-screen py-28">
         <Header
           isSidebarOpen={isSidebarOpen}
@@ -57,7 +43,7 @@ function App() {
         </main>
         <Footer />
       </div>
-    </LocaleContext.Provider>
+    </LocaleProvider>
   );
 }
 

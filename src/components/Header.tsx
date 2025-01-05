@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 import { MdGTranslate } from "react-icons/md";
-import LocaleContext from "../context/LocaleContext";
+import { LocaleContext } from "../context/LocaleContext";
 
 const Header = ({
   isSidebarOpen,

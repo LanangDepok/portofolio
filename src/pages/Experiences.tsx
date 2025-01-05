@@ -12,7 +12,7 @@ import toolstore from "../assets/images/experience/toolstore.jpg";
 import MSIB from "../assets/images/experience/MSIB.png";
 import scriptSI from "../assets/images/experience/scriptSI.png";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
-import LocaleContext from "../context/LocaleContext";
+import { LocaleContext } from "../context/LocaleContext";
 import { useContext, useEffect } from "react";
 
 const Experiences = () => {

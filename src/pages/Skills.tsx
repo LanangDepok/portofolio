@@ -12,7 +12,7 @@ import { SiNextdotjs } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiTypescript } from "react-icons/si";
-import LocaleContext from "../context/LocaleContext";
+import { LocaleContext } from "../context/LocaleContext";
 import { useContext, useEffect } from "react";
 
 const Skills = () => {
