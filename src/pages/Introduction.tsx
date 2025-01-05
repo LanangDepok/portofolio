@@ -50,7 +50,7 @@ const Introduction = () => {
             <p className="text-white text-lg lg:text-2xl">
               {locale === "en" ? "AS" : "Sebagai"}
               <span className="text-purple-600 text-2xl lg:text-3xl font-semibold ml-2">
-                Full Stack Web Developer
+                Full Stack Developer
               </span>
             </p>
           </div>
