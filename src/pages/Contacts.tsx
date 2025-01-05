@@ -28,8 +28,8 @@ const Contacts = () => {
         >
           <p className="text-white text-justify">
             {locale === "en"
-              ? " If you’re interested in working together or have any questions about what I do, feel free to get in touch. You can use the form below to send me a message with your ideas, questions, or anything you’d like to share. I’ll do my best to review your message quickly and get back to you as soon as I can. Thank you for reaching out, and I look forward to hearing from you!"
-              : "Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan tentang apa yang saya lakukan, jangan ragu untuk menghubungi saya. Anda dapat menggunakan formulir di bawah ini untuk mengirimkan pesan berisi ide, pertanyaan, atau apa pun yang ingin Anda bagikan. Saya akan berusaha sebaik mungkin untuk meninjau pesan Anda dengan cepat dan membalasnya sesegera mungkin. Terima kasih telah menghubungi, dan saya menantikan untuk mendengar kabar dari Anda!"}
+              ? "Do you have any questions, ideas, or want to collaborate? Feel free to reach out to me using the form below. I am always open to meaningful discussions and ready to help bring your needs or projects to life. You can also connect with me through the social media links provided. I will do my best to respond to your message promptly. Thank you for taking the time, and I look forward to hearing from you!"
+              : "Apakah Anda memiliki pertanyaan, ide, atau ingin berkolaborasi? Jangan ragu untuk menghubungi saya melalui formulir di bawah ini. Saya selalu terbuka untuk diskusi yang membangun dan siap membantu Anda mewujudkan kebutuhan atau proyek Anda. Anda juga dapat terhubung dengan saya melalui media sosial yang tercantum. Saya akan berusaha merespons pesan Anda secepat mungkin. Terima kasih telah meluangkan waktu, dan saya menantikan kabar dari Anda!"}
           </p>
           <div className="flex gap-10 mt-5">
             <a
