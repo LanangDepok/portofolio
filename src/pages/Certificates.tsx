@@ -4,6 +4,7 @@ import dicoding_reactdasar from "../assets/images/certificate/dicoding_reactdasa
 import CCIT from "../assets/images/certificate/CCIT.jpg";
 import LSP_informatika from "../assets/images/certificate/LSP_informatika.jpg";
 import LSP_tikglobal from "../assets/images/certificate/LSP_tikglobal.jpg";
+import udemy_laravel_pzn from "../assets/images/certificate/udemy_laravel_pzn.jpg";
 // import dicoding_aws from "./assets/images/certificate/dicoding_aws.png";
 // import NIIT from "./assets/images/certificate/NIIT.jpg";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
@@ -33,6 +34,9 @@ const Certificates = () => {
         </div>
         <div>
           <ImageWithSkeleton src={CCIT} alt="CCIT" />
+        </div>
+        <div>
+          <ImageWithSkeleton src={udemy_laravel_pzn} alt="CCIT" />
         </div>
         <div>
           <ImageWithSkeleton
