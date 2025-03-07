@@ -49,7 +49,7 @@ const Contacts = () => {
               <BsInstagram className="text-[#E1306C] size-10" />
             </a>
             <a
-              href="https://www.linkedin.com/in/bagas-rizkiyanto"
+              href="https://www.linkedin.com/in/bagasrizkiyanto"
               target="_blank"
               rel="noopener noreferrer"
               className="transition duration-300 hover:scale-150"
